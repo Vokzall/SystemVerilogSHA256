@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Dec 17 01:11:31 2024
+# Process ID: 1984
+# Current directory: D:/Git/SystemVerilogSHA256/FPGA/SHA256.runs/synth_1
+# Command line: vivado.exe -log miner.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source miner.tcl
+# Log file: D:/Git/SystemVerilogSHA256/FPGA/SHA256.runs/synth_1/miner.vds
+# Journal file: D:/Git/SystemVerilogSHA256/FPGA/SHA256.runs/synth_1\vivado.jou
+# Running On: Vokzall, OS: Windows, CPU Frequency: 1995 MHz, CPU Physical cores: 4, Host memory: 17063 MB
+#-----------------------------------------------------------
+source miner.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1706.492 ; gain = 0.000
+Command: synth_design -top miner -part xc7a100tfgg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22512
+ERROR: [Synth 8-6034] decimal constant 4294967296 is too large, should be smaller than 2147483648; using 0 instead [D:/Git/SystemVerilogSHA256/sha_mainloop.sv:84]
+ERROR: [Synth 8-6034] decimal constant 4294967296 is too large, should be smaller than 2147483648; using 0 instead [D:/Git/SystemVerilogSHA256/sha_mainloop.sv:85]
+ERROR: [Synth 8-6034] decimal constant 4294967296 is too large, should be smaller than 2147483648; using 0 instead [D:/Git/SystemVerilogSHA256/sha_mainloop.sv:116]
+ERROR: [Synth 8-6034] decimal constant 4294967296 is too large, should be smaller than 2147483648; using 0 instead [D:/Git/SystemVerilogSHA256/sha_mainloop.sv:120]
+ERROR: [Synth 8-6735] net type must be explicitly specified for 'padded' when default_nettype is none [D:/Git/SystemVerilogSHA256/sha_mainloop.sv:5]
+ERROR: [Synth 8-6735] net type must be explicitly specified for 'clk' when default_nettype is none [D:/Git/SystemVerilogSHA256/sha_mainloop.sv:6]
+ERROR: [Synth 8-6735] net type must be explicitly specified for 'rst' when default_nettype is none [D:/Git/SystemVerilogSHA256/sha_mainloop.sv:6]
+INFO: [Synth 8-8750] module 'sha_mainloop' ignored due to previous errors [D:/Git/SystemVerilogSHA256/sha_mainloop.sv:142]
+Failed to read verilog 'D:/Git/SystemVerilogSHA256/sha_mainloop.sv'
+INFO: [Common 17-83] Releasing license: Synthesis
+6 Infos, 0 Warnings, 0 Critical Warnings and 8 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 01:12:02 2024...

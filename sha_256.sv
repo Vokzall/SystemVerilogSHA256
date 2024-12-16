@@ -1,4 +1,4 @@
-`default_nettype none
+//`default_nettype none
 `timescale 1 ns / 10 ps
 
 module sha_256	#(parameter MSG_SIZE = 24,

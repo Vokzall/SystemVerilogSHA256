@@ -1,0 +1,10 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+D:/Git/SystemVerilogSHA256/FPGA/SHA256.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,uvm,,,,,,
+D:/Git/SystemVerilogSHA256/miner.sv,1734386621,systemVerilog,,D:/Git/SystemVerilogSHA256/sha_256.sv,,miner,,uvm,,,,,,
+D:/Git/SystemVerilogSHA256/miner_tb.sv,1734386562,systemVerilog,,,,miner_tb,,uvm,,,,,,
+D:/Git/SystemVerilogSHA256/sha_256.sv,1734386536,systemVerilog,,D:/Git/SystemVerilogSHA256/sha_mainloop.sv,,sha_256,,uvm,,,,,,
+D:/Git/SystemVerilogSHA256/sha_mainloop.sv,1734385921,systemVerilog,,D:/Git/SystemVerilogSHA256/sha_padder.sv,,sha_mainloop,,uvm,,,,,,
+D:/Git/SystemVerilogSHA256/sha_padder.sv,1734385921,systemVerilog,,D:/Git/SystemVerilogSHA256/miner_tb.sv,,sha_padder,,uvm,,,,,,

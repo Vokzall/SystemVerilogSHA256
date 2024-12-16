@@ -1,14 +1,14 @@
-`default_nettype none
+//`default_nettype none
 `timescale 1 ns / 10 ps
 
-module miner (input logic [639:0] block,
-			input logic clk, rst,
+module miner (input wire [639:0] block,
+			input wire clk, rst,
 			output logic [255:0] hashed,
 			output logic done);
 	
 	logic [255:0] first_hash;
 	logic [255:0] secnd_hash;
-
+	
 	logic second_run_rst;
 	logic done_first_hash;
 	logic done_secnd_hash;
